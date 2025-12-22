@@ -30,6 +30,7 @@ export default async function main(argv: string[]): Promise<void> {
             good?: string;
             bad?: string;
             exclude?: string[];
+            discovery?: boolean;
             releasedOnly?: boolean;
             sanity?: boolean;
             verbose?: boolean;
@@ -44,11 +45,12 @@ export default async function main(argv: string[]): Promise<void> {
             .addOption(new Option('-r, --runtime <desktop|web|vscode.dev>', 'whether to bisect with a local web, online vscode.dev or local desktop (default) version').choices(['desktop', 'web', 'vscode.dev']))
             .option('-c, --commit <commit|latest>', 'commit hash of a published build to test or "latest" released build (supercedes -g and -b)')
             .option('-v, --version <major.minor>', 'version of a published build to test, for example 1.93 (supercedes -g, -b and -c)')
-            .addOption(new Option('-q, --quality <insider|stable>', 'quality of a published build to test, defaults to "insider"').choices(['insider', 'stable']))
+            .addOption(new Option('-q, --quality <insider|stable|vscodium-insider>', 'quality of a published build to test, defaults to "insider"').choices(['insider', 'stable', 'vscodium-insider']))
             .addOption(new Option('-f, --flavor <flavor>', 'flavor of a published build to test (only applies when testing desktop builds)').choices(['universal', 'cli', 'win32-user', 'win32-system', 'linux-deb', 'linux-rpm', 'linux-snap', 'cli-linux-amd64', 'cli-linux-arm64', 'cli-linux-armv7', 'cli-alpine-amd64', 'cli-alpine-arm64']))
             .option('-g, --good <commit|version>', 'commit hash or version of a published build that does not reproduce the issue')
             .option('-b, --bad <commit|version>', 'commit hash or version of a published build that reproduces the issue')
             .option('--exclude <commits...>', 'commit hashes to exclude from bisecting (can be specified multiple times)')
+            .option('--discovery', 'use the official Discovery API to find builds instead of local history cache')
             .option('--releasedOnly', 'only bisect over released builds to support older builds')
             .option('--reset', 'deletes the cache folder (use only for troubleshooting)')
             .addOption(new Option('-p, --perf [path]', 'runs a performance test and optionally writes the result to the provided path').hideHelp())
@@ -163,7 +165,7 @@ ${chalk.bold('Storage:')} ${chalk.green(BUILD_FOLDER)}
             commit = build.commit;
         } else if (opts.commit) {
             if (opts.commit === 'latest') {
-                const allBuilds = await builds.fetchBuilds(buildKind, undefined, undefined, opts.releasedOnly);
+                const allBuilds = await builds.fetchBuilds(buildKind, undefined, undefined, opts.releasedOnly, undefined, opts.discovery);
                 commit = allBuilds[0].commit;
             } else {
                 commit = opts.commit;
@@ -182,7 +184,7 @@ ${chalk.bold('Storage:')} ${chalk.green(BUILD_FOLDER)}
 
         // No commit provided: bisect commit ranges
         else {
-            await bisecter.start(buildKind, goodCommitOrVersion, badCommitOrVersion, opts.releasedOnly, opts.exclude);
+            await bisecter.start(buildKind, goodCommitOrVersion, badCommitOrVersion, opts.releasedOnly, opts.exclude, opts.discovery);
         }
     } catch (error) {
         LOGGER.log(`${chalk.red('\n[error]')} ${error}`);

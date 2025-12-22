@@ -1,0 +1,562 @@
+[
+  {
+    "version": "1.0.0-insider",
+    "commit": "fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8",
+    "date": 1460545713307
+  },
+  {
+    "version": "1.0.1-insider",
+    "commit": "85f337ee0851a464d5459ce9a354d05f94f0b9a4",
+    "date": 1461150232238
+  },
+  {
+    "version": "1.1.0-insider",
+    "commit": "c212f0908f3d29933317bbc3233568fbca7944b1",
+    "date": 1462798949844
+  },
+  {
+    "version": "1.1.1-insider",
+    "commit": "def9e32467ad6e4f48787d38caf190acbfee5880",
+    "date": 1463146885229
+  },
+  {
+    "version": "1.2.0-insider",
+    "commit": "7ccb21d7e7256a7d42f3dda8b2d3721b8e59724f",
+    "date": 1464613012387
+  },
+  {
+    "version": "1.3.0-insider",
+    "commit": "e724f269ded347b49fcf1657fc576399354e6703",
+    "date": 1467812653366
+  },
+  {
+    "version": "1.4.0-insider",
+    "commit": "e3758d2cdaae78082a08a45ae28ea1bed5f47e8c",
+    "date": 1469818320102
+  },
+  {
+    "version": "1.5.0-insider",
+    "commit": "4fc690be310dd02e0ab6529c0b9bf348a8b26a19",
+    "date": 1473332453542
+  },
+  {
+    "version": "1.6.0-insider",
+    "commit": "093d09e9e8a6b76ec09af97da45e242e317d8d95",
+    "date": 1475866868562
+  },
+  {
+    "version": "1.7.0-insider",
+    "commit": "9e7d70052908b633e0d4f71e70b26714bd1d2f10",
+    "date": 1478064896469
+  },
+  {
+    "version": "1.8.0-insider",
+    "commit": "2abfc207828739bd5b10d0bb8dbfea13506cfc69",
+    "date": 1481622616852
+  },
+  {
+    "version": "1.9.0-insider",
+    "commit": "27240e71ef390bf2d66307e677c2a333cebf75af",
+    "date": 1485948842244
+  },
+  {
+    "version": "1.10.0-insider",
+    "commit": "40fecfaa77f01672e8a147be71f6f7ccb9cf8a12",
+    "date": 1488204701363
+  },
+  {
+    "version": "1.11.0-insider",
+    "commit": "ce0277bf8e30329fddcba1b67f8ba7314c10c97e",
+    "date": 1491340291274
+  },
+  {
+    "version": "1.12.0-insider",
+    "commit": "0834f15e86ef8359da9fbcf95d49083001af65c3",
+    "date": 1493822642863
+  },
+  {
+    "version": "1.13.0-insider",
+    "commit": "376c52b955428d205459bea6619fc161fc8faacf",
+    "date": 1496875787244
+  },
+  {
+    "version": "1.14.0-insider",
+    "commit": "b8cd5b9556d8b70ea560d35b903422363f6c5c40",
+    "date": 1499372341122
+  },
+  {
+    "version": "1.15.0-insider",
+    "commit": "2c3e2c291c515619f64e7c9cddf14c565b7f3d92",
+    "date": 1502227862173
+  },
+  {
+    "version": "1.16.0-insider",
+    "commit": "787b31c0474e6165390b5a5989c9619e3e16f953",
+    "date": 1504644919551
+  },
+  {
+    "version": "1.17.0-insider",
+    "commit": "81fc22ec957de26d2bf6aada3f16f04e0164741c",
+    "date": 1507071109235
+  },
+  {
+    "version": "1.18.0-insider",
+    "commit": "dcee2202709a4f223185514b9275aa4229841aa7",
+    "date": 1510129178648
+  },
+  {
+    "version": "1.19.0-insider",
+    "commit": "816be6780ca8bd0ab80314e11478c48c70d09383",
+    "date": 1513192180748
+  },
+  {
+    "version": "1.20.0-insider",
+    "commit": "f9398645d1d624538708eeebf96e6fdeb546f5d7",
+    "date": 1517930448017
+  },
+  {
+    "version": "1.21.0-insider",
+    "commit": "a903bd38fbe9006c076d218ff69fe1ee0160f815",
+    "date": 1520334294576
+  },
+  {
+    "version": "1.22.0-insider",
+    "commit": "6b4d53cdab8bcae1eaaa4934d93c077319b573db",
+    "date": 1522849835567
+  },
+  {
+    "version": "1.23.0-insider",
+    "commit": "a656d397e424173c86f32703e0c0293bd8084da0",
+    "date": 1525305998128
+  },
+  {
+    "version": "1.24.0-insider",
+    "commit": "b4e6fe3bd751448783ed20c8e49fdabd69514b8d",
+    "date": 1528217500561
+  },
+  {
+    "version": "1.25.0-insider",
+    "commit": "0f080e5267e829de46638128001aeb7ca2d6d50e",
+    "date": 1530713537127
+  },
+  {
+    "version": "1.26.0-insider",
+    "commit": "207ace21dfec3dccab52f1296a3880ac7644c978",
+    "date": 1533883454753
+  },
+  {
+    "version": "1.27.0-insider",
+    "commit": "7b9afc4196bda60b0facdf62cfc02815509b23d6",
+    "date": 1535966391117
+  },
+  {
+    "version": "1.27.1-insider",
+    "commit": "5944e81f3c46a3938a82c701f96d7a59b074cfdc",
+    "date": 1536216971053
+  },
+  {
+    "version": "1.28.0-insider",
+    "commit": "431ef9da3cf88a7e164f9d33bf62695e07c6c2a9",
+    "date": 1538570494829
+  },
+  {
+    "version": "1.29.0-insider",
+    "commit": "5f24c93878bd4bc645a4a17c620e2487b11005f9",
+    "date": 1541809919301
+  },
+  {
+    "version": "1.30.0-insider",
+    "commit": "c6e592b2b5770e40a98cb9c2715a8ef89aec3d74",
+    "date": 1544538996804
+  },
+  {
+    "version": "1.31.0-insider",
+    "commit": "b313db6c58f8c02181a33cd3b5b4b17c64a5b85d",
+    "date": 1549361835180
+  },
+  {
+    "version": "1.32.0-insider",
+    "commit": "507312a3e3b34b084b467dfd983263bc7c9d87e0",
+    "date": 1551866804184
+  },
+  {
+    "version": "1.33.0-insider",
+    "commit": "4d1cb56a5b88248b1e0f38b9980f4a1bc8a6fb1a",
+    "date": 1554279178930
+  },
+  {
+    "version": "1.34.0-insider",
+    "commit": "693a13cd32c5be798051edc0cb43e1e39fc456d9",
+    "date": 1557350286053
+  },
+  {
+    "version": "1.35.0-insider",
+    "commit": "553cfb2c2205db5f15f3ee8395bbd5cf066d357d",
+    "date": 1559607146296
+  },
+  {
+    "version": "1.36.0-insider",
+    "commit": "0f3794b38477eea13fb47fbe15a42798e6129338",
+    "date": 1562140951230
+  },
+  {
+    "version": "1.37.0-insider",
+    "commit": "5e08ee01b7daee99cdda2456f19d77e715fb8762",
+    "date": 1565039875561
+  },
+  {
+    "version": "1.38.0-insider",
+    "commit": "3db7e09f3b61f915d03bbfa58e258d6eee843f35",
+    "date": 1567552443588
+  },
+  {
+    "version": "1.39.0-insider",
+    "commit": "9df03c6d6ce97c6645c5846f6dfa2a6a7d276515",
+    "date": 1570608666686
+  },
+  {
+    "version": "1.40.0-insider",
+    "commit": "86405ea23e3937316009fc27c9361deee66ffbf5",
+    "date": 1573059483900
+  },
+  {
+    "version": "1.41.0-insider",
+    "commit": "9579eda04fdb3a9bba2750f15193e5fafe16b959",
+    "date": 1576013876855
+  },
+  {
+    "version": "1.42.0-insider",
+    "commit": "ae08d5460b5a45169385ff3fd44208f431992451",
+    "date": 1580932647950
+  },
+  {
+    "version": "1.43.0-insider",
+    "commit": "5996fb81591e92fd0c547dc45e3f0350026d5962",
+    "date": 1583536198141
+  },
+  {
+    "version": "1.44.0-insider",
+    "commit": "2aae1f26c72891c399f860409176fe435a154b13",
+    "date": 1586295223594
+  },
+  {
+    "version": "1.45.0-insider",
+    "commit": "d69a79b73808559a91206d73d7717ff5f798f23c",
+    "date": 1588752881584
+  },
+  {
+    "version": "1.46.0-insider",
+    "commit": "a5d1cc28bb5da32ec67e86cc50f84c67cc690321",
+    "date": 1591723603897
+  },
+  {
+    "version": "1.47.0-insider",
+    "commit": "d5e9aa0227e057a60c82568bf31c04730dc15dcd",
+    "date": 1594205072847
+  },
+  {
+    "version": "1.48.0-insider",
+    "commit": "db40434f562994116e5b21c24015a2e40b2504e6",
+    "date": 1597187367571
+  },
+  {
+    "version": "1.49.0-insider",
+    "commit": "e790b931385d72cf5669fcefc51cdf65990efa5d",
+    "date": 1599638745016
+  },
+  {
+    "version": "1.50.0-insider",
+    "commit": "93c2f0fbf16c5a4b10e4d5f89737d9c2c25488a3",
+    "date": 1602031994559
+  },
+  {
+    "version": "1.51.0-insider",
+    "commit": "fcac248b077b55bae4ba5bab613fd6e9156c2f0c",
+    "date": 1604514033514
+  },
+  {
+    "version": "1.52.0-insider",
+    "commit": "dbbf7079b20b3036b3ff5ac2e2106b84dd3c6d66",
+    "date": 1607616894878
+  },
+  {
+    "version": "1.53.0-insider",
+    "commit": "8490d3dde47c57ba65ec40dd192d014fd2113496",
+    "date": 1612367334247
+  },
+  {
+    "version": "1.54.0-insider",
+    "commit": "42e27fe5cdc58539dad9867970326a297eb8cacf",
+    "date": 1614711825463
+  },
+  {
+    "version": "1.55.0-insider",
+    "commit": "c185983a683d14c396952dd432459097bc7f757f",
+    "date": 1617108016361
+  },
+  {
+    "version": "1.56.0-insider",
+    "commit": "cfa2e218100323074ac1948c885448fdf4de2a7f",
+    "date": 1620165095482
+  },
+  {
+    "version": "1.57.0-insider",
+    "commit": "b4c1bd0a9b03c749ea011b06c6d2676c8091a70c",
+    "date": 1623235151291
+  },
+  {
+    "version": "1.58.0-insider",
+    "commit": "2d23c42a936db1c7b3b06f918cde29561cc47cd6",
+    "date": 1625659525980
+  },
+  {
+    "version": "1.59.0-insider",
+    "commit": "379476f0e13988d90fab105c5c19e7abc8b1dea8",
+    "date": 1628108644080
+  },
+  {
+    "version": "1.60.0-insider",
+    "commit": "e7d7e9a9348e6a8cc8c03f877d39cb72e5dfb1ff",
+    "date": 1630492698609
+  },
+  {
+    "version": "1.61.0-insider",
+    "commit": "2dc8b9580809148e312356852affc4b8d4feb7da",
+    "date": 1633508432747
+  },
+  {
+    "version": "1.62.0-insider",
+    "commit": "b3318bc0524af3d74034b8bb8a64df0ccf35549a",
+    "date": 1635945323648
+  },
+  {
+    "version": "1.63.0-insider",
+    "commit": "7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e",
+    "date": 1638827503805
+  },
+  {
+    "version": "1.64.0-insider",
+    "commit": "5554b12acf27056905806867f251c859323ff7e9",
+    "date": 1643821939796
+  },
+  {
+    "version": "1.65.0-insider",
+    "commit": "b5205cc8eb4fbaa726835538cd82372cc0222d43",
+    "date": 1646190949241
+  },
+  {
+    "version": "1.66.0-insider",
+    "commit": "521a3d858570ebc9ce9d5602802f4525a02e045c",
+    "date": 1648539185345
+  },
+  {
+    "version": "1.67.0-insider",
+    "commit": "57fd6d0195bb9b9d1b49f6da5db789060795de47",
+    "date": 1651666002132
+  },
+  {
+    "version": "1.68.0-insider",
+    "commit": "4af164ea3a06f701fe3e89a2bcbb421d2026b68f",
+    "date": 1654688382954
+  },
+  {
+    "version": "1.69.0-insider",
+    "commit": "92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9",
+    "date": 1657046135267
+  },
+  {
+    "version": "1.70.0-insider",
+    "commit": "da76f93349a72022ca4670c1b84860304616aaa2",
+    "date": 1659506348972
+  },
+  {
+    "version": "1.71.0-insider",
+    "commit": "078f8e986d44de2c88f1f52bf63cecb2f8ec2560",
+    "date": 1661910801546
+  },
+  {
+    "version": "1.72.0-insider",
+    "commit": "64bbfbf67ada9953918d72e1df2f4d8e537d340e",
+    "date": 1664925551006
+  },
+  {
+    "version": "1.73.0-insider",
+    "commit": "8fa188b2b301d36553cbc9ce1b0a146ccb93351f",
+    "date": 1667317018320
+  },
+  {
+    "version": "1.74.0-insider",
+    "commit": "5235c6bb189b60b01b1f49062f4ffa42384f8c91",
+    "date": 1670235244075
+  },
+  {
+    "version": "1.75.0-insider",
+    "commit": "e2816fe719a4026ffa1ee0189dc89bdfdbafb164",
+    "date": 1675264218998
+  },
+  {
+    "version": "1.76.0-insider",
+    "commit": "92da9481c0904c6adfe372c12da3b7748d74bdcb",
+    "date": 1677585170431
+  },
+  {
+    "version": "1.77.0-insider",
+    "commit": "7f329fe6c66b0f86ae1574c2911b681ad5a45d63",
+    "date": 1680082700747
+  },
+  {
+    "version": "1.78.0-insider",
+    "commit": "657bb89984f37b810b250955570593cde0cd62eb",
+    "date": 1683026290291
+  },
+  {
+    "version": "1.79.0-insider",
+    "commit": "b380da4ef1ee00e224a15c1d4d9793e27c2b6302",
+    "date": 1686147847782
+  },
+  {
+    "version": "1.80.0-insider",
+    "commit": "660393deaaa6d1996740ff4880f1bad43768c814",
+    "date": 1688468350240
+  },
+  {
+    "version": "1.81.0-insider",
+    "commit": "6445d93c81ebe42c4cbd7a60712e0b17d9463e97",
+    "date": 1690979664163
+  },
+  {
+    "version": "1.82.0-insider",
+    "commit": "16e9205452dd417e32f164325b589b94892846b4",
+    "date": 1693983866292
+  },
+  {
+    "version": "1.83.0-insider",
+    "commit": "e7e037083ff4455cf320e344325dacb480062c3c",
+    "date": 1696340588286
+  },
+  {
+    "version": "1.84.0-insider",
+    "commit": "d037ac076cee195194f93ce6fe2bdfe2969cc82d",
+    "date": 1698833966657
+  },
+  {
+    "version": "1.85.0-insider",
+    "commit": "182f5125f2f8a8469e9dac4ed4795b804671bf7d",
+    "date": 1701982339081
+  },
+  {
+    "version": "1.86.0-insider",
+    "commit": "05047486b6df5eb8d44b2ecd70ea3bdf775fd937",
+    "date": 1706669757735
+  },
+  {
+    "version": "1.87.0-insider",
+    "commit": "019f4d1419fbc8219a181fab7892ebccf7ee29a2",
+    "date": 1709074656201
+  },
+  {
+    "version": "1.88.0-insider",
+    "commit": "57028e3d274ebde851c7cc02123def372ca619a6",
+    "date": 1712116775384
+  },
+  {
+    "version": "1.89.0-insider",
+    "commit": "b58957e67ee1e712cebf466b995adf4c5307b2bd",
+    "date": 1714526482977
+  },
+  {
+    "version": "1.90.0-insider",
+    "commit": "89de5a8d4d6205e5b11647eb6a74844ca23d2573",
+    "date": 1717462311096
+  },
+  {
+    "version": "1.91.0-insider",
+    "commit": "aea213b7fcc7de5c24ad797ac1af209b159d451f",
+    "date": 1719551152579
+  },
+  {
+    "version": "1.92.0-insider",
+    "commit": "b1c0a14de1414fcdaa400695b4db1c0799bc3124",
+    "date": 1722458216763
+  },
+  {
+    "version": "1.93.0-insider",
+    "commit": "4849ca9bdf9666755eb463db297b69e5385090e3",
+    "date": 1725456226341
+  },
+  {
+    "version": "1.94.0-insider",
+    "commit": "d78a74bcdfad14d5d3b1b782f87255d802b57511",
+    "date": 1727874565890
+  },
+  {
+    "version": "1.95.0-insider",
+    "commit": "912bb683695358a54ae0c670461738984cbb5b95",
+    "date": 1730146517686
+  },
+  {
+    "version": "1.96.0-insider",
+    "commit": "138f619c86f1199955d53b4166bef66ef252935c",
+    "date": 1733872116051
+  },
+  {
+    "version": "1.97.0-insider",
+    "commit": "33fc5a94a3f99ebe7087e8fe79fbe1d37a251016",
+    "date": 1738695171117
+  },
+  {
+    "version": "1.98.0-insider",
+    "commit": "6609ac3d66f4eade5cf376d1cb76f13985724bcb",
+    "date": 1741115044181
+  },
+  {
+    "version": "1.99.0-insider",
+    "commit": "b34f7ee5b19a94b2aa6982c48a9495f691a8d9f6",
+    "date": 1743617173930
+  },
+  {
+    "version": "1.100.0-insider",
+    "commit": "19e0f9e681ecb8e5c09d8784acaa601316ca4571",
+    "date": 1746622199042
+  },
+  {
+    "version": "1.101.0-insider",
+    "commit": "dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1",
+    "date": 1749656171245
+  },
+  {
+    "version": "1.102.0-insider",
+    "commit": "cb0c47c0cfaad0757385834bd89d410c78a856c0",
+    "date": 1752098921799
+  },
+  {
+    "version": "1.103.0-insider",
+    "commit": "e3550cfac4b63ca4eafca7b601f0d2885817fd1f",
+    "date": 1754516060763
+  },
+  {
+    "version": "1.104.0-insider",
+    "commit": "f220831ea2d946c0dcb0f3eaa480eb435a2c1260",
+    "date": 1757455805518
+  },
+  {
+    "version": "1.105.0-insider",
+    "commit": "03c265b1adee71ac88f833e065f7bb956b60550a",
+    "date": 1759932555270
+  },
+  {
+    "version": "1.106.0-insider",
+    "commit": "ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57",
+    "date": 1762871417911
+  },
+  {
+    "version": "1.107.0-insider",
+    "commit": "618725e67565b290ba4da6fe2d29f8fa1d4e3622",
+    "date": 1765349967052
+  },
+  {
+    "version": "1.108.0-insider",
+    "commit": "7f08f95ad54782bd242f5536470b330282197333",
+    "date": 1766153666395
+  }
+]
