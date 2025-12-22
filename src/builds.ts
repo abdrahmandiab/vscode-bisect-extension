@@ -179,12 +179,29 @@ class Builds {
     }
 
     private async fetchAllBuilds({ runtime, quality, flavor }: IBuildKind, releasedOnly = false, useDiscovery = false): Promise<IBuild[]> {
+        // VSCodium MUST use Local History JSON (Discovery API not supported)
+        if (quality === Quality.VSCodiumInsider) {
+            useDiscovery = false;
+        }
+
         // Use Local History JSON instead of Discovery API (unless useDiscovery is enabled)
         if (!useDiscovery) {
             const history = this.loadHistory(quality);
             if (history.length > 0) {
                 LOGGER.log(`${chalk.gray('[build]')} loaded ${chalk.green(history.length)} builds from local history json...`);
-                return history.map((h: any) => ({ commit: h.commit, date: h.date, version: h.version, assets: h.assets, runtime, quality, flavor }));
+                return history.map((h: any) => ({
+                    commit: h.commit,
+                    date: h.date,
+                    version: h.version,
+                    assets: h.assets,
+                    runtime, quality, flavor
+                }));
+            }
+
+            // If VSCodium and no history, we can't fall back to API.
+            if (quality === Quality.VSCodiumInsider) {
+                LOGGER.log(`${chalk.red('[build]')} No VSCodium history found. Please run 'scrape_vscodium_assets.py'.`);
+                return [];
             }
         }
 
