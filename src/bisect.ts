@@ -15,7 +15,8 @@ import { cleanUserDataDir } from './files.js';
 export enum BisectResponse {
     Good = 1,
     Bad,
-    Quit
+    Quit,
+    Skipped
 }
 
 interface IBisectState {
@@ -56,13 +57,13 @@ class Bisecter {
                 badBuild = build;
             } else if (response === BisectResponse.Good) {
                 goodBuild = build;
-            } else {
+            } else if (response === BisectResponse.Quit) {
                 quit = true;
                 break;
             }
 
-            const finished = this.nextState(state, response);
-            if (finished) {
+            // If Skipped, nextState will handle it (by shifting index)
+            if (this.nextState(state, response) === false) {
                 break;
             }
         }
@@ -113,7 +114,11 @@ ${chalk.green('╚════════════════════�
             return commitOrVersion;
         }
 
-        throw new Error(`Invalid commit or version format. Please provide a valid Git commit hash or version in the format of ${chalk.green('major.minor')}.`);
+        if (/^\d{1,2}-\d{1,2}-\d{4}$/.test(commitOrVersion)) {
+            return commitOrVersion;
+        }
+
+        throw new Error(`Invalid commit, version, or date format. Please provide a valid Git commit hash, version (major.minor), or date (DD-MM-YYYY).`);
     }
 
     private async finishBisect(badBuild: IBuild | undefined, goodBuild: IBuild | undefined): Promise<void> {
@@ -151,18 +156,19 @@ ${chalk.green(`git bisect start && git bisect bad ${badBuild.commit} && git bise
 
     private nextState(state: IBisectState, response: BisectResponse): boolean {
 
-        // Binary search is done
-        if (state.currentChunk === 1) {
+        if (response === BisectResponse.Skipped) {
+            state.currentIndex++;
             return true;
         }
 
         // Binary search is not done
-        else {
-            state.currentChunk = Math.round(state.currentChunk / 2);
-            state.currentIndex = response === BisectResponse.Good ? state.currentIndex - state.currentChunk /* try newer */ : state.currentIndex + state.currentChunk /* try older */;
-
+        state.currentChunk = Math.floor(state.currentChunk / 2);
+        if (state.currentChunk === 0) {
             return false;
         }
+
+        state.currentIndex = response === BisectResponse.Good ? state.currentIndex - state.currentChunk : state.currentIndex + state.currentChunk;
+        return true;
     }
 
     async tryBuild(build: IBuild, options: { forceReDownload: boolean, isBisecting: boolean }): Promise<BisectResponse> {
@@ -208,7 +214,13 @@ ${chalk.green(`git bisect start && git bisect bad ${badBuild.commit} && git bise
             }
 
             return response.status === 'good' ? BisectResponse.Good : response.status === 'bad' ? BisectResponse.Bad : BisectResponse.Quit;
-        } catch (error) {
+        } catch (error: any) {
+            // Handle 404 (Build Missing)
+            if (error.message && (error.message.includes('404') || error.message.includes('Not Found'))) {
+                LOGGER.log(`${chalk.yellow('[build]')} Build not found on server (404). Skipping...`);
+                return BisectResponse.Skipped;
+            }
+
             LOGGER.log(`${chalk.red('\n[error]')} ${error}\n`);
 
             console.log();

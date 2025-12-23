@@ -51,7 +51,7 @@
   },
   {
     "version": "1.0.0",
-    "commit": "c1d66b6e47c9da4c768ce7f216da14e7e4ac06ff",
+    "commit": "fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8",
     "date": 1460537586457
   },
   {
@@ -146,7 +146,7 @@
   },
   {
     "version": "1.9.0",
-    "commit": "12e4e9d3fc73e4783fd74221b6cab77b6f1a14d9",
+    "commit": "27240e71ef390bf2d66307e677c2a333cebf75af",
     "date": 1486023935880
   },
   {
@@ -211,7 +211,7 @@
   },
   {
     "version": "1.14.0",
-    "commit": "c887dd955170aebce0f6bb160b146f2e6e10a199",
+    "commit": "b8cd5b9556d8b70ea560d35b903422363f6c5c40",
     "date": 1499711341960
   },
   {
@@ -236,7 +236,7 @@
   },
   {
     "version": "1.16.0",
-    "commit": "aa42e6ef8184e8ab20ddaa5682b861bfb6f0b2ad",
+    "commit": "787b31c0474e6165390b5a5989c9619e3e16f953",
     "date": 1504714610024
   },
   {
@@ -286,12 +286,12 @@
   },
   {
     "version": "1.19.3",
-    "commit": "554a9c6dcd8b0636ace6f1c64e13e12adf0fcd1d",
+    "commit": "7c4205b5c6e52a53b81c69d2b2dc8a627abaa0ba",
     "date": 1516876202597
   },
   {
     "version": "1.19.3",
-    "commit": "554a9c6dcd8b0636ace6f1c64e13e12adf0fcd1d",
+    "commit": "7c4205b5c6e52a53b81c69d2b2dc8a627abaa0ba",
     "date": 1516876202597
   },
   {
@@ -426,7 +426,7 @@
   },
   {
     "version": "1.31.0",
-    "commit": "bb1e228e30ce43ebb361c84fdf2f0d4fb7fda6ce",
+    "commit": "7c66f58312b48ed8ca4e387ebd9ffe9605332caa",
     "date": 1549406180007
   },
   {
@@ -656,7 +656,7 @@
   },
   {
     "version": "1.49.2",
-    "commit": "44f17daa51b1c87f666f9fc28047509297b8e692",
+    "commit": "e5e9e69aed6e1984f7499b7af85b3d05f9a6883a",
     "date": 1600964331237
   },
   {
@@ -966,7 +966,7 @@
   },
   {
     "version": "1.71.1",
-    "commit": "a44493aed3c9ccdec18a4bc00869403736b29c64",
+    "commit": "e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb",
     "date": 1662665968333
   },
   {
@@ -1086,7 +1086,7 @@
   },
   {
     "version": "1.79.1",
-    "commit": "67fa15cbc7ecfcc164127c5a346c1185596e9dce",
+    "commit": "4cb974a7aed77a74c7813bdccd99ee0d04901215",
     "date": 1686586079352
   },
   {
@@ -1181,7 +1181,7 @@
   },
   {
     "version": "1.86.0",
-    "commit": "f5442d1f9fcdc7ce89a34c6e52a11ba44e47b423",
+    "commit": "05047486b6df5eb8d44b2ecd70ea3bdf775fd937",
     "date": 1706689023597
   },
   {
@@ -1286,7 +1286,7 @@
   },
   {
     "version": "1.94.1",
-    "commit": "acb2ed666e6254b03ec48e3e7c0b78960ce4350d",
+    "commit": "e10f2369d0d9614a452462f2e01cdc4aa9486296",
     "date": 1728106700563
   },
   {
@@ -1451,7 +1451,7 @@
   },
   {
     "version": "1.103.1",
-    "commit": "e3550cfac4b63ca4eafca7b601f0d2885817fd1f",
+    "commit": "360a4e4fd251bfce169a4ddf857c7d25d1ad40da",
     "date": 1755015978102
   },
   {
@@ -1518,5 +1518,10 @@
     "version": "1.107.1",
     "commit": "994fd12f8d3a5aa16f17d42c041e5809167e845a",
     "date": 1765981114920
+  },
+  {
+    "version": "1.999.0",
+    "commit": "51245062b7615aea4c7eb900fea8fb91581482be",
+    "date": null
   }
 ]

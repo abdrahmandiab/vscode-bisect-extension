@@ -47,10 +47,13 @@ class Builds {
         try {
             const content = readFileSync(path, 'utf8');
             const history = JSON.parse(content);
-            // JSON is Oldest -> Newest (based on generation script)
-            // We want Newest -> Oldest for the UI/Bisecter (index 0 = newest)
-            // VSCodium JSON might be Newest->Oldest already? Let's assume consistent scraper behavior.
-            // My scrapers produced Ascending (Old -> New). So Reverse is correct.
+
+            // VS Code history files: Oldest -> Newest (needs reverse)
+            // VSCodium history file: Newest -> Oldest (already correct)
+            if (quality === Quality.VSCodiumInsider) {
+                return history;
+            }
+
             return history.slice().reverse();
         } catch (e) {
             console.error(`Failed to load history from ${path}: ${e}`);
@@ -483,6 +486,9 @@ class Builds {
             switch (effectivePlatform) {
                 case Platform.MacOSX64:
                 case Platform.MacOSArm:
+                    if (quality === Quality.VSCodiumInsider) {
+                        return 'VSCodium - Insiders.app';
+                    }
                     return quality === 'insider' ? 'Visual Studio Code - Insiders.app' : 'Visual Studio Code.app';
                 case Platform.LinuxX64:
                 case Platform.LinuxArm:

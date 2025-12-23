@@ -143,11 +143,14 @@ def main():
         meta = get_version_metadata(version_str, info['label'])
         date_val = None
         
-        if meta and 'timestamp' in meta:
-            # timestamp is usually a number (epoch ms)? Or ISO?
-            # API returns "timestamp": 169099999...
-            date_val = meta['timestamp'] 
-            # Note: `src/builds.ts` handles number or string.
+        if meta:
+            if 'timestamp' in meta:
+                date_val = meta['timestamp']
+            
+            # CRITICAL: Use the commit hash from the build server if available.
+            # Git tags sometimes point to a slightly different commit than the released build.
+            if 'version' in meta and len(meta['version']) == 40:
+                commit_sha = meta['version']
         
         build = {
             'version': version_str,
